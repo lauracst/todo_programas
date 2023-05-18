@@ -1,0 +1,88 @@
+# Lista 
+
+# 1
+print("Lista \n")
+import random
+lista=[]  
+num=()
+print("Ingrese cuantos números aleatorios desea obtener")
+n=int(input())
+lista=[random.randint(0,10)for _ in range(n)]
+# Rempalozo de número por -1
+
+# 2
+print("La lista aleatoria queda", lista)
+num_1=int(input("\nIngrese un número para remplazar en la lista por (-1): "))
+
+for i in range(len(lista)):
+    if lista[i]==num_1:
+        lista[i]=-1
+
+print("La lista con el número reemplazado es:", lista)
+
+# Leer un numero a eliminar 
+
+# 3
+print("\nEliminar un número \n")
+print("La lista aleatoria queda", lista)
+
+lista.sort(reverse=True)
+
+numElim=int(input("Ingresar el número que decea eliminar de la lista: "))
+
+if numElim in lista:
+    lista.remove(numElim)
+    print("El número fue eliminado de la lista.")
+else:
+    print("El número no está presente en la lista.")
+
+print("La lista con el número reemplazado es:", lista)
+
+# Leer un numero y ponerlo en la lista
+
+# Ordenar la lista
+
+# 4 
+# Orden de menor a mayor
+print("\nOrdenar la lista de menor a mayor \n")
+print("La lista aleatoria queda", lista)
+
+print("La lista aleatoria queda", lista)
+
+lista.sort()
+
+print("La lista ordenada de menor a mayor es:", lista)
+
+# Orden de mayor a menor 
+print("\nOrdenar la lista de mayor a menor \n")
+print("La lista aleatoria queda", lista)
+
+print(lista)
+
+lista.sort(reverse=True)
+
+print("La lista ordenada de mayor a menor es:", lista)
+
+# Leer un numero imprir cuanntas veces se repite 
+
+# 5 
+print(lista)
+
+print("Cuantas veces se repite un número\n")
+
+numReo=int(input("Digite el número que decea buscar: "))
+
+veces=lista.count(numReo)
+
+print("El número se respite ", veces )
+
+# Lista de repetición 
+
+# 6
+
+
+
+# Gestor de notas
+
+# 7
+
